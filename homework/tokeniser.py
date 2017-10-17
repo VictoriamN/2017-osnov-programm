@@ -9,7 +9,8 @@ for i in range(0, len(text)):
     print("# sent_id = ",i+1,"\n"+"# text = ", line)
     token_id = 1
     punctuation = [".", ",", "?", "!", ":", ";"]
-    
+    newline1=line.replace("с. ш.","&&&&")
+    newline2=newline1.replace("з. д.","////")
     for hats in punctuation:
             newline2 = newline2.replace(hats, " " + hats)
     tokens = newline2.split(" ")
