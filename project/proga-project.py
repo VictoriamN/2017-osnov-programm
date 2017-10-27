@@ -25,7 +25,7 @@ for line in lines[1:]:
         tag_count[tag] = 0
     tag_count[tag] = tag_count[tag] + 1
 
-    # берём инфинитив из второй колонки
+
     word = row[2]
     if word == '_':
         continue
